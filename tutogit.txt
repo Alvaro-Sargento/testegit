@@ -1,0 +1,53 @@
+//configuracoes iniciais
+primeiro:
+	git config --global user.name "Alavro Sargento"
+segundo:
+	git config --global user.email "sargentoa2@gmail.com"
+
+//limpar tela
+	clear
+
+//criando um repositorio
+	git init
+//verificar status do repositorio
+	 git status	
+//Agora devemos adicionar os arquivos que queremos trabalhar na pasta(pode copiar e colar dentro do repositorio)
+
+//comando para adicionar o arquivo para o nivel de versionamento
+	git add tutogit.txt
+
+//adicionar todos os arquivos de uma so vez
+	git add .
+
+//adicionar todos os arquivos com determina tipo de uma so vez
+	git add *.txt
+
+//fazendo um commit (actualizar mudancas e mandar para repositorio)
+	git commit -m "mensagem ou titulo"
+
+//ignorando arquivos(nome do arquivo gitignore)
+
+*****************************************************
+//clonando repositorios da github
+
+git clone https://github.com/Alvaro-Sargento/primeiro-laravel.git
+
+*****************************************************
+//fazendo o push
+//Inicialize o diretório local como um repositório Git
+		git init -b main
+
+//adiciona as alteracaoes
+	git add .
+//commitando
+	git commit -m "First commit"
+//adicionando ao repositorio remoto
+//copiar a url ssh no repositorio desejado
+	git remote add origin https://github.com/Alvaro-Sargento/primeiro-laravel.git
+//novo comando
+	git remote -v
+//enviando alteracoes
+	git push origin main
+
+
+
